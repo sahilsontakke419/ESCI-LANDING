@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ESCI-2026 | AISSMS IOIT Pune</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #002855;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin-bottom: 0.5rem;
+      font-size: 2.2rem;
+    }
+    header p {
+      margin: 0;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    section {
+      padding: 2rem;
+      background: #fff;
+      margin: 1rem auto;
+      max-width: 900px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    section:nth-child(even) {
+      background: #E6F0FA;
+    }
+    h2 {
+      color: #002855;
+      border-bottom: 3px solid #e63946;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul li {
+      background: #fff;
+      margin: 0.4rem 0;
+      padding: 0.6rem;
+      border-left: 5px solid #002855;
+      border-radius: 5px;
+    }
+    .cta {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .cta a {
+      background: #e63946;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      font-size: 1.2rem;
+      border-radius: 50px;
+      transition: 0.3s;
+    }
+    .cta a:hover {
+      background: #b71c1c;
+    }
+    footer {
+      background: #002855;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    /* Scroll-to-top button */
+    #topBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #e63946;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+    #topBtn:hover {
+      background-color: #b71c1c;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ESCI-2026 Conference</h1>
+    <p>8th IEEE International Conference on Emerging Smart Computing and Informatics</p>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>ESCI-2026 is a premier forum for researchers and industry experts to explore advances in smart computing, informatics, and emerging technologies.</p>
+  </section>
+
+  <section id="dates">
+    <h2>Important Dates</h2>
+    <ul>
+      <li><strong>Paper Submission Deadline:</strong> September 15, 2025</li>
+      <li><strong>Notification of Acceptance:</strong> September 30, 2025</li>
+      <li><strong>Registration & CRC Submission:</strong> October 10, 2025</li>
+      <li><strong>Conference Dates:</strong> March 11–13, 2026</li>
+    </ul>
+  </section>
+
+  <section id="submit">
+    <h2>Submit Your Paper</h2>
+    <p>Researchers are invited to submit original, unpublished work via Microsoft CMT. Accepted papers will be considered for inclusion in IEEE Xplore.</p>
+    <div class="cta">
+      <a href="#submission-link">Submit Now</a>
+    </div>
+  </section>
+
+  <section id="special-sessions">
+    <h2>Special Sessions</h2>
+    <ul>
+      <li>Recent Advances in Intelligent Systems & Machine Learning</li>
+      <li>Innovative Trends in Mechatronics for Industry</li>
+      <li>Convergence of Industry 4.0/5.0</li>
+    </ul>
+  </section>
+
+  <section id="venue">
+    <h2>Venue & Contact</h2>
+    <p><strong>Location:</strong> AISSMS Institute of Information Technology, Kennedy Road, Pune – 411 001, Maharashtra, India</p>
+    <p><strong>Contact:</strong> +91 020 26057983 / 26057636 | principal@aissmsioit.org</p>
+  </section>
+
+  <footer>
+    <p>Organized by AISSMS IOIT • Affiliated to Savitribai Phule Pune University • Approved by AICTE</p>
+  </footer>
+
+  <!-- Scroll-to-top button -->
+  <button onclick="topFunction()" id="topBtn" title="Go to top">↑</button>
+
+  <script>
+    let mybutton = document.getElementById("topBtn");
+
+    // Show button when scrolling down 20px
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // Scroll to top smoothly
+    function topFunction() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
