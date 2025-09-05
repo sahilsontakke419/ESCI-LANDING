@@ -1,177 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ESCI-2026 | AISSMS IOIT Pune</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #002855;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin-bottom: 0.5rem;
-      font-size: 2.2rem;
-    }
-    header p {
-      margin: 0;
-      font-size: 1.1rem;
-      opacity: 0.9;
-    }
-    section {
-      padding: 2rem;
-      background: #fff;
-      margin: 1rem auto;
-      max-width: 900px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    }
-    section:nth-child(even) {
-      background: #E6F0FA;
-    }
-    h2 {
-      color: #002855;
-      border-bottom: 3px solid #e63946;
-      padding-bottom: 0.3rem;
-      margin-bottom: 1rem;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    ul li {
-      background: #fff;
-      margin: 0.4rem 0;
-      padding: 0.6rem;
-      border-left: 5px solid #002855;
-      border-radius: 5px;
-    }
-    .cta {
-      text-align: center;
-      margin: 2rem 0;
-    }
-    .cta a {
-      background: #e63946;
-      color: #fff;
-      padding: 1rem 2rem;
-      text-decoration: none;
-      font-size: 1.2rem;
-      border-radius: 50px;
-      transition: 0.3s;
-    }
-    .cta a:hover {
-      background: #b71c1c;
-    }
-    footer {
-      background: #002855;
-      color: #fff;
-      padding: 1rem;
-      text-align: center;
-      font-size: 0.9rem;
-      margin-top: 2rem;
-    }
-
-    /* Scroll-to-top button */
-    #topBtn {
-      display: none;
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 99;
-      font-size: 18px;
-      border: none;
-      outline: none;
-      background-color: #e63946;
-      color: white;
-      cursor: pointer;
-      padding: 15px;
-      border-radius: 50%;
-      transition: 0.3s;
-    }
-    #topBtn:hover {
-      background-color: #b71c1c;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AISSMS IOIT ESCI - Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <h1>ESCI-2026 Conference</h1>
-    <p>8th IEEE International Conference on Emerging Smart Computing and Informatics</p>
+<body class="font-sans">
+
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-red-700">ESCI @ IOIT</h1>
+      <nav class="hidden md:flex space-x-6 font-medium text-gray-700">
+        <a href="#about" class="hover:text-red-600">About</a>
+        <a href="#esci" class="hover:text-red-600">ESCI-2026</a>
+        <a href="#special" class="hover:text-red-600">Special Session</a>
+        <a href="#committee" class="hover:text-red-600">Committee</a>
+        <a href="#links" class="hover:text-red-600">Important Links</a>
+        <a href="#previous" class="hover:text-red-600">Previous Conferences</a>
+        <a href="#sponsors" class="hover:text-red-600">Sponsors</a>
+        <a href="#schedule" class="hover:text-red-600">Schedule</a>
+        <a href="#contact" class="hover:text-red-600">Contact Us</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>ESCI-2026 is a premier forum for researchers and industry experts to explore advances in smart computing, informatics, and emerging technologies.</p>
-  </section>
-
-  <section id="dates">
-    <h2>Important Dates</h2>
-    <ul>
-      <li><strong>Paper Submission Deadline:</strong> September 15, 2025</li>
-      <li><strong>Notification of Acceptance:</strong> September 30, 2025</li>
-      <li><strong>Registration & CRC Submission:</strong> October 10, 2025</li>
-      <li><strong>Conference Dates:</strong> March 11–13, 2026</li>
-    </ul>
-  </section>
-
-  <section id="submit">
-    <h2>Submit Your Paper</h2>
-    <p>Researchers are invited to submit original, unpublished work via Microsoft CMT. Accepted papers will be considered for inclusion in IEEE Xplore.</p>
-    <div class="cta">
-      <a href="#submission-link">Submit Now</a>
+  <section class="relative w-full h-[500px] flex items-center justify-center overflow-hidden">
+    <div id="hero-slideshow" class="absolute inset-0 w-full h-full">
+      <img src="watermark.png" alt="" class="absolute inset-0 w-full h-full object-cover opacity-80 transition-opacity duration-1000">
+      <img src="watermark2.png" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000">
+      <img src="watermark3.png" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000">
+    </div>
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative text-center text-white px-6 z-10">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Welcome to ESCI</h2>
+      <p class="text-lg md:text-xl">8th International Conference on Emerging Smart Computing & Informatics 2026 (Hybrid Mode)
+        (11, 12 & 13 March 2026)</p>
     </div>
   </section>
 
-  <section id="special-sessions">
-    <h2>Special Sessions</h2>
-    <ul>
-      <li>Recent Advances in Intelligent Systems & Machine Learning</li>
-      <li>Innovative Trends in Mechatronics for Industry</li>
-      <li>Convergence of Industry 4.0/5.0</li>
-    </ul>
+  <section id="esci" class="py-16 bg-[#8B4513] text-white px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 text-center">About ESCI-2026</h2>
+      <p class="mb-4 leading-relaxed">
+        The 8th IEEE International Conference on Emerging Smart Computing and Informatics (ESCI-2026) is a platform where academics and industry researchers present their latest algorithms, models, and technologies, and explore new trends and ideas in smart computing and informatics.
+      </p>
+      <p class="mb-4 leading-relaxed">
+        The aim of this conference is to provide a unified platform for emerging trends in smart computing, networking, communication, signal and image processing, cybersecurity, and IoT.
+      </p>
+      <p class="mb-4 leading-relaxed">
+        The key intention is to provide an opportunity for global participants to share their ideas and experiences in person with peers expected to join from different parts of the world. The conference will help delegates to establish a research environment and find international linkages for future collaborations in their career paths.
+      </p>
+      <p class="mb-4 leading-relaxed">
+        The conference focuses on various modernization and innovation paradigms that can be applied to present practical and creative solutions to diverse issues in society, industry, and the environment.
+      </p>
+      <p class="mb-4 leading-relaxed">
+        The conference proceedings invite academics and industry researchers to publish papers explaining literature reviews, problem statements, and methodologies with appropriate results. Selected papers will be sent to experts for review. Acceptance will be based on significance, innovation, originality, and the quality of unpublished work. Accepted and presented papers will be published in the IEEE Xplore Digital Library.
+      </p>
+      <p class="leading-relaxed">
+        The conference also invites papers on special topics, tools, and applications in multidisciplinary areas, along with tutorial sessions conducted by expert academicians and professionals.
+      </p>
+    </div>
   </section>
 
-  <section id="venue">
-    <h2>Venue & Contact</h2>
-    <p><strong>Location:</strong> AISSMS Institute of Information Technology, Kennedy Road, Pune – 411 001, Maharashtra, India</p>
-    <p><strong>Contact:</strong> +91 020 26057983 / 26057636 | principal@aissmsioit.org</p>
+  <section id="tracks" class="py-16 bg-gray-50">
+    <h2 class="text-3xl font-bold text-center mb-12">Our Tracks</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
+      <div class="bg-white shadow-lg rounded-2xl p-8 text-center hover:scale-105 transition-transform">
+        <img src="ai.png" alt="AI Track" class="mx-auto h-24 mb-4">
+        <h3 class="text-xl font-semibold">AI Track</h3>
+        <p class="text-gray-600 mt-2">Workshops and sessions on Artificial Intelligence and Machine Learning.</p>
+      </div>
+      <div class="bg-white shadow-lg rounded-2xl p-8 text-center hover:scale-105 transition-transform">
+        <img src="iot.png" alt="IoT Track" class="mx-auto h-24 mb-4">
+        <h3 class="text-xl font-semibold">IoT Track</h3>
+        <p class="text-gray-600 mt-2">Learn about the Internet of Things and its real-world applications.</p>
+      </div>
+      <div class="bg-white shadow-lg rounded-2xl p-8 text-center hover:scale-105 transition-transform">
+        <img src="cyber.png" alt="Cybersecurity Track" class="mx-auto h-24 mb-4">
+        <h3 class="text-xl font-semibold">Cybersecurity Track</h3>
+        <p class="text-gray-600 mt-2">Explore security threats and defenses in the digital era.</p>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>Organized by AISSMS IOIT • Affiliated to Savitribai Phule Pune University • Approved by AICTE</p>
+  <section id="sponsors" class="py-16 bg-[#f5f0da] text-center">
+    <h2 class="text-3xl font-bold mb-8">Our Media Partners</h2>
+    <div class="flex flex-col md:flex-row justify-center items-center gap-12">
+      <img src="partner1.png" alt="Partner 1" class="h-24">
+      <img src="partner2.png" alt="Partner 2" class="h-24">
+    </div>
+  </section>
+
+  <section class="bg-blue-600 text-white py-12">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-6">
+      <div>
+        <h3 class="text-xl font-bold mb-4">Venue</h3>
+        <p class="font-semibold">AISSMS Institute of Information Technology</p>
+        <p class="mt-2">Kennedy Road, Near R.T.O, Pune – 01, Maharashtra (INDIA).</p>
+        <p class="mt-2"><strong>Tel:</strong> +91 (020) 26057983, 26057636</p>
+      </div>
+      <div id="previous">
+        <h3 class="text-xl font-bold mb-4">Previous Conferences</h3>
+        <ul class="space-y-2">
+          <li>➤ IEEE ESCI 2025</li>
+          <li>➤ IEEE ESCI 2024</li>
+          <li>➤ IEEE ESCI 2023</li>
+          <li>➤ IEEE ESCI 2022</li>
+          <li>➤ IEEE ESCI 2021</li>
+          <li>➤ IEEE ESCI 2020</li>
+        </ul>
+      </div>
+      <div id="links">
+        <h3 class="text-xl font-bold mb-4">Important Links</h3>
+        <ul class="space-y-2">
+          <li>➤ <a href="#" class="hover:underline">Submit Paper</a></li>
+          <li>➤ <a href="#" class="hover:underline">Download Template</a></li>
+          <li>➤ <a href="#" class="hover:underline">About Conference</a></li>
+          <li>➤ <a href="#" class="hover:underline">Registration Fees</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white text-center py-4">
+    <p>&copy; 2025 ESCI 2026 | Powered by Tinfosystem</p>
   </footer>
 
-  <!-- Scroll-to-top button -->
-  <button onclick="topFunction()" id="topBtn" title="Go to top">↑</button>
-
   <script>
-    let mybutton = document.getElementById("topBtn");
-
-    // Show button when scrolling down 20px
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-
-    // Scroll to top smoothly
-    function topFunction() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
+    window.addEventListener("load", () => {
+      const slides = document.querySelectorAll('#hero-slideshow img');
+      let i = 0;
+      setInterval(() => {
+        slides[i].classList.remove('opacity-80');
+        slides[i].classList.add('opacity-0');
+        i = (i + 1) % slides.length;
+        slides[i].classList.remove('opacity-0');
+        slides[i].classList.add('opacity-80');
+      }, 4000);
+    });
   </script>
+
 </body>
 </html>
